@@ -1,11 +1,21 @@
 # ![CC: Tweaked](doc/logo.png)
 [![Current build status](https://github.com/cc-tweaked/CC-Tweaked/workflows/Build/badge.svg)](https://github.com/cc-tweaked/CC-Tweaked/actions "Current build status") [![Download CC: Tweaked on CurseForge](http://cf.way2muchnoise.eu/title/cc-tweaked.svg)][CurseForge]
 
-Built with GitPod (See Building Instructions for More Information)
-<Full Changelog: INSERT CHANGELOG HERE>
+![](https://github.com/TheMindVirus/CC-Modded/blob/main/src/main/resources/assets/computercraft/textures/block/computer_command_front.png) Built with [GitPod](https://gitpod.io/#https://github.com/cc-tweaked/CC-Tweaked/) (See [Building Instructions](https://github.com/TheMindVirus/CC-Modded/blob/main/CONTRIBUTING.md#developing) below for More Information) \
+Full Changelog: https://github.com/TheMindVirus/CC-Modded/blob/main/cctweakedpatchnotes.txt
+## New Features
+```diff
+- Red Computers!
+- Red Peripherals!
+- New Modem Commands!
+```
+https://github.com/TheMindVirus/CC-Modded/blob/75eec07acb640223f7b744e820dd96dd79d1d740/src/main/java/dan200/computercraft/shared/peripheral/modem/wired/WiredModemPeripheral.java#L230
 
-<INSERT CHANGES HERE>
+https://github.com/TheMindVirus/CC-Modded/blob/75eec07acb640223f7b744e820dd96dd79d1d740/src/main/java/dan200/computercraft/shared/peripheral/modem/wired/WiredModemLocalPeripheral.java#L106
 
+#### Textures: https://github.com/TheMindVirus/CC-Modded/tree/main/src/main/resources/assets/computercraft/textures/block/
+
+## About
 CC: Tweaked is a mod for Minecraft which adds programmable computers, turtles and more to the game. A fork of the
 much-beloved [ComputerCraft], it continues its legacy with better performance, stability, and a wealth of new features.
 
@@ -56,3 +66,11 @@ the generated documentation [can be browsed online](https://tweaked.cc/javadoc/)
 [modrinth]: https://modrinth.com/mod/gu7yAYhd "Download CC: Tweaked from Modrinth"
 [forge]: https://files.minecraftforge.net/ "Download Minecraft Forge."
 [ccrestitched]: https://www.curseforge.com/minecraft/mc-mods/cc-restitched "Download CC: Restitched from CurseForge"
+
+## Screenshots
+### Redpods
+![redpods](https://github.com/TheMindVirus/CC-Modded/blob/main/redpods.png)
+### Usage
+![usage](https://github.com/TheMindVirus/CC-Modded/blob/main/usage.png)
+### GitPod
+![gitpod](https://github.com/TheMindVirus/CC-Modded/blob/main/gitpod.png)
