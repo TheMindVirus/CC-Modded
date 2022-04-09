@@ -3,7 +3,7 @@
  * Copyright Daniel Ratcliffe, 2011-2022. Do not distribute without permission.
  * Send enquiries to dratcliffe@gmail.com
  */
-package dan200.computercraft.shared.peripheral.modem.wired;
+package dan200.computercraft.shared.peripheral.modem.wired; //^^ this and compilation is why nothing happened.
 
 import com.google.common.collect.ImmutableMap;
 import dan200.computercraft.ComputerCraft;

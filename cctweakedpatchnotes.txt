@@ -27,8 +27,8 @@ https://github.com/cc-tweaked/CC-Tweaked/tree/mc-1.18.x
 
 [warnings]
 > Task :checkstyleMain
-Comment has incorrect indentation level 0, expected is 4, indentation should be the same level as line 103. [nonsensical error]
-'(' is not followed by whitespace. [disrespectful error]
+Comment has incorrect indentation level 0, expected is 4, indentation should be the same level as line 103. [nonsensical error] - No comment.
+'(' is not followed by whitespace. [disrespectful error] - while this makes text "easier to read" this rule is then blatantly broken `for(` keywords
 ')' is not preceded with whitespace. [disrespectful error]
 Comment has incorrect indentation level 0, expected is 4, indentation should be the same level as line 110. [nonsensical error]
 Comment has incorrect indentation level 0, expected is 4, indentation should be the same level as line 229. [nonsensical error]
@@ -37,3 +37,5 @@ Comment has incorrect indentation level 0, expected is 4, indentation should be 
 '(' is not followed by whitespace. [disrespectful error]
 ')' is not preceded with whitespace. [disrespectful error]
 Comment has incorrect indentation level 0, expected is 4, indentation should be the same level as line 237. [nonsensical error]
+'{' at column 38 should be on a new line. [erroneous error] - required for multiple macros to work
+'}' at column 58 should be alone on a line. [erroneous error]

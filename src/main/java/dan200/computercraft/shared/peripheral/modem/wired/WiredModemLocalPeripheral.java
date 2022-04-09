@@ -3,7 +3,7 @@
  * Copyright Daniel Ratcliffe, 2011-2022. Do not distribute without permission.
  * Send enquiries to dratcliffe@gmail.com
  */
-package dan200.computercraft.shared.peripheral.modem.wired;
+package dan200.computercraft.shared.peripheral.modem.wired; //^^ this and compilation is why nothing happened.
 
 import dan200.computercraft.api.peripheral.IPeripheral;
 import dan200.computercraft.shared.Peripherals;
@@ -30,8 +30,9 @@ import java.util.Map;
  */
 public final class WiredModemLocalPeripheral
 {
-    private static final String NBT_PERIPHERAL_TYPE = "PeripheralType";
     private static final String NBT_PERIPHERAL_ID = "PeripheralId";
+    private static final String NBT_PERIPHERAL_TYPE = "PeripheralType";
+    private static final String NBT_PERIPHERAL_NAME = "PeripheralName"; ///!!! WHY WAS THIS MISSING !!!///
 
     private int id = -1;
     private String type;
@@ -76,6 +77,11 @@ public final class WiredModemLocalPeripheral
             {
                 this.type = type;
                 this.id = IDAssigner.getNextId( "peripheral." + type );
+            }
+
+            if ( this.name == null ) //Both the newline rule and the whitespace rule shouldn't be applied here - this sucks, change it back
+            {
+                this.name = type;
             }
 
             return oldPeripheral == null || !oldPeripheral.equals( peripheral );
@@ -136,20 +142,24 @@ public final class WiredModemLocalPeripheral
 
     public void extendMap( @Nonnull Map<String, IPeripheral> peripherals )
     {
-        if( peripheral != null ) peripherals.put( type + "_" + id, peripheral );
+        //if( peripheral != null ) peripherals.put( type + "_" + id, peripheral );
+        if( peripheral != null ) peripherals.put( name + "_" + id, peripheral );
+        //Needs Curly Braces to allow multiple macros but newline rule prevents it - This sucks, change it back
     }
 
     public Map<String, IPeripheral> toMap()
     {
         return peripheral == null
             ? Collections.emptyMap()
-            : Collections.singletonMap( type + "_" + id, peripheral );
+            : Collections.singletonMap( name + "_" + id, peripheral ); //: Collections.singletonMap( type + "_" + id, peripheral );
     }
 
     public void write( @Nonnull CompoundTag tag, @Nonnull String suffix )
     {
         if( id >= 0 ) tag.putInt( NBT_PERIPHERAL_ID + suffix, id );
         if( type != null ) tag.putString( NBT_PERIPHERAL_TYPE + suffix, type );
+        if( name != null ) tag.putString( NBT_PERIPHERAL_NAME + suffix, name );
+        //Needs Curly Braces to allow multiple macros but newline rule prevents it - This sucks, change it back
     }
 
     public void read( @Nonnull CompoundTag tag, @Nonnull String suffix )
@@ -159,6 +169,9 @@ public final class WiredModemLocalPeripheral
 
         type = tag.contains( NBT_PERIPHERAL_TYPE + suffix, Tag.TAG_STRING )
             ? tag.getString( NBT_PERIPHERAL_TYPE + suffix ) : null;
+
+        name = tag.contains( NBT_PERIPHERAL_NAME + suffix, Tag.TAG_STRING )
+            ? tag.getString( NBT_PERIPHERAL_NAME + suffix ) : null;
     }
 
     @Nullable
