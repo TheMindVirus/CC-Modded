@@ -15,6 +15,10 @@ https://github.com/TheMindVirus/CC-Modded/blob/75eec07acb640223f7b744e820dd96dd7
 
 #### Textures: https://github.com/TheMindVirus/CC-Modded/tree/main/src/main/resources/assets/computercraft/textures/block/
 
+## Download
+Build Artifacts: https://github.com/TheMindVirus/CC-Modded/tree/main/build/libs \
+Direct Download: https://github.com/TheMindVirus/CC-Modded/raw/main/build/libs/cc-tweaked-1.18.2-1.100.4.jar
+
 ## About
 CC: Tweaked is a mod for Minecraft which adds programmable computers, turtles and more to the game. A fork of the
 much-beloved [ComputerCraft], it continues its legacy with better performance, stability, and a wealth of new features.
