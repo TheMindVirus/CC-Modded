@@ -1,0 +1,39 @@
+[mod info]
+
+https://github.com/cc-tweaked/CC-Tweaked/tree/mc-1.18.x
+
+[patch notes]
+
+./src/main/java/dan200/computercraft/shared/peripheral/modem/wired/WiredModemPeripheral.java#L222
+- missing `getTypeLocal()` which calls methods in `WiredModemLocalPeripheral.java`
+- missing `setIDLocal( @Nonnull int id )` which calls methods in `WiredModemLocalPeripheral.java`
+- missing `setNameLocal( @Nonnull String name )` which calls methods in `WiredModemLocalPeripheral.java`
+- peripheral ID of wired modem comes up as 0 or duplicated when cloned by worldedit
+
+./src/main/java/dan200/computercraft/shared/peripheral/modem/wired/WiredModemLocalPeripheral.java#L36
+- missing `getConnectedType()` which returns the type of peripheral connected
+- missing `setConnectedID( @Nonnull int newid )` which changes the private id (not fine)
+- missing `setConnectedName( @Nonnull String newname )` which concatenates peripheral type and private id (not fine)
+- `string name` unnecessarily became `@Nonnull String newname` for every method, breaking a tonne of mods from 1.16.2
+
+./src/main/resources/assets/computercraft/textures/block
+- Change the following files to have even dark crimson red texture with python PIL
+  - cable_*.png
+  - computer_command_*.png
+  - disk_drive_*.png
+  - monitor_advanced-*.png
+- Change the following files to have odd dark bluish gray texture with python PIL
+  - speaker_*.png
+
+[warnings]
+> Task :checkstyleMain
+Comment has incorrect indentation level 0, expected is 4, indentation should be the same level as line 103. [nonsensical error]
+'(' is not followed by whitespace. [disrespectful error]
+')' is not preceded with whitespace. [disrespectful error]
+Comment has incorrect indentation level 0, expected is 4, indentation should be the same level as line 110. [nonsensical error]
+Comment has incorrect indentation level 0, expected is 4, indentation should be the same level as line 229. [nonsensical error]
+'(' is not followed by whitespace. [disrespectful error]
+')' is not preceded with whitespace. [disrespectful error]
+'(' is not followed by whitespace. [disrespectful error]
+')' is not preceded with whitespace. [disrespectful error]
+Comment has incorrect indentation level 0, expected is 4, indentation should be the same level as line 237. [nonsensical error]
