@@ -9,9 +9,9 @@ Full Changelog: https://github.com/TheMindVirus/CC-Modded/blob/main/cctweakedpat
 - Red Peripherals!
 - New Modem Commands!
 ```
-https://github.com/TheMindVirus/CC-Modded/blob/75eec07acb640223f7b744e820dd96dd79d1d740/src/main/java/dan200/computercraft/shared/peripheral/modem/wired/WiredModemPeripheral.java#L230
+https://github.com/TheMindVirus/CC-Modded/blob/380cb62da9d51ce13624b1a82357269c42e48dd4/src/main/java/dan200/computercraft/shared/peripheral/modem/wired/WiredModemPeripheral.java#L230
 
-https://github.com/TheMindVirus/CC-Modded/blob/75eec07acb640223f7b744e820dd96dd79d1d740/src/main/java/dan200/computercraft/shared/peripheral/modem/wired/WiredModemLocalPeripheral.java#L106
+https://github.com/TheMindVirus/CC-Modded/blob/380cb62da9d51ce13624b1a82357269c42e48dd4/src/main/java/dan200/computercraft/shared/peripheral/modem/wired/WiredModemLocalPeripheral.java#L112
 
 #### Textures: https://github.com/TheMindVirus/CC-Modded/tree/main/src/main/resources/assets/computercraft/textures/block/
 
