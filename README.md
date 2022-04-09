@@ -15,6 +15,17 @@ https://github.com/TheMindVirus/CC-Modded/blob/380cb62da9d51ce13624b1a82357269c4
 
 #### Textures: https://github.com/TheMindVirus/CC-Modded/tree/main/src/main/resources/assets/computercraft/textures/block/
 
+#### New Commands:
+```
+mod = peripheral.wrap("back")
+mod.getNameLocal()
+mod.getNamesRemote()
+mod.getIDLocal()
+mod.setIDLocal(7)
+mod.getTypeLocal()
+mod.setNameLocal("router")
+```
+
 ## Download
 Direct Download: https://github.com/TheMindVirus/CC-Modded/raw/main/build/libs/cc-modded-1.18.2-1.100.4.jar \
 CurseForge: https://www.curseforge.com/minecraft/mc-mods/cc-modded \
