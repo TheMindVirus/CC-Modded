@@ -4,17 +4,17 @@
 # Provisioning a Node: [NodeProvisioning.mp4](./NodeProvisioning.mp4)
 # Hidden Settings
 ```
-Some computer settings have been authoritatively hidden from the source tree \
-and are only applied in cloud build of the mod. This has been made obvious by \
-the custom deepsearch.py tool vs. GitHub and the poor coding style enforcements. \
+Some computer settings have been authoritatively hidden from the source tree
+and are only applied in cloud build of the mod. This has been made obvious by
+the custom deepsearch.py tool vs. GitHub and the poor coding style enforcements.
 Options in `config/computercraft-client.toml` are also being blanked authoritatively.
 
-If you want your cluster to boot from disk, the only known workaround is to \
-build one layer of advanced computers as a control plane and an adjacent layer \
-of command computers directly attached as a command plane. This will be slower. \
+If you want your cluster to boot from disk, the only known workaround is to
+build one layer of advanced computers as a control plane and an adjacent layer
+of command computers directly attached as a command plane. This will be slower.
 Otherwise, every node has to be provisioned manually.
 
-A custom build which completely ignores this setting in the lua bios is another \
+A custom build which completely ignores this setting in the lua bios is another
 way to workaround the issue but it requires recompilation.
 ```
 # WorldEdit
