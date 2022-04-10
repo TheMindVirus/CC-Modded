@@ -33,7 +33,8 @@ CurseForge: https://www.curseforge.com/minecraft/mc-mods/cc-modded \
 Build Artifacts: https://github.com/TheMindVirus/CC-Modded/tree/main/build/libs \
 Source Code: https://github.com/TheMindVirus/CC-Modded/archive/refs/heads/main.zip
 
-\* - this build has been patched by hand to allow Command Computers to boot from local disks by default. More Info: https://github.com/TheMindVirus/CC-Modded/issues/3
+\* - this build has been patched by hand to allow Command Computers to boot from local disks by default. \
+More Info: [ https://github.com/TheMindVirus/CC-Modded/issues/3 ](https://github.com/TheMindVirus/CC-Modded/issues/3)
 
 ## About
 CC: Tweaked is a mod for Minecraft which adds programmable computers, turtles and more to the game. A fork of the
