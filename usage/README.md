@@ -1,7 +1,7 @@
 # Cluster Usage
 ![screenshot](../redpods.png)
-# Provisioning a Node: [NodeProvisioning.mp4](./NodeProvisioning.mp4)
 # Wake On LAN: [WakeOnLAN.mp4](./WakeOnLAN.mp4)
+# Provisioning a Node: [NodeProvisioning.mp4](./NodeProvisioning.mp4)
 # WorldEdit
 ```py
 Build Cluster
