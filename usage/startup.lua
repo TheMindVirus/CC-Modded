@@ -10,6 +10,7 @@ if _G.mod == nil then
 end
 _G.mod.setNameLocal("node")
 _G.mod.setIDLocal(id)
+_G.mod.open(0)
 
 os.setComputerLabel(_G.mod.getNameLocal())
 print(os.getComputerLabel())
